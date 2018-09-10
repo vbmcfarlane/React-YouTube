@@ -1,3 +1,5 @@
+//load environment variables
+ 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YouTubeSearch from 'youtube-api-search';
@@ -5,12 +7,13 @@ import __ from 'lodash';
 import SearchBar from './components/Search_Bar';
 import VideoList from './components/Video_List';
 import VideoDetail from './components/Video_Detail';
-
-const API_Key = "AIzaSyCQHw4YSGIyLEUVoAxn-GHNmC2HC6_8XSw";
-
+ 
+ 
+const API_Key = "";
+ 
 class App extends Component {
 	constructor(props){
-		super(props);
+		super(props); 
 
 		this.state = {
 			videos: [],
